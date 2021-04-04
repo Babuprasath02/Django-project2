@@ -1,0 +1,18 @@
+{% extends 'task2.html' %}
+{% block content %}
+<!DOCTYPE html>
+<head>
+<title>vehicle C</title>
+</head>
+<body>
+<h1>vehicle C</h1>
+<form method="POST">
+{% csrf_token %}
+Product Name:<input type="text" id="name" name="prdct" placeholder="Product Name"><br><br>
+Weight:<input type="text" id="weight" name="wt" placeholder="Weight"><br><br>
+<button type="submit">Submit</button><br><br>
+</form>
+<a href="veh3/detailsc">View Details</a>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'task2.html' %}
+{% block content %}
+<!DOCTYPE html>
+<head>
+<title>vehicle B</title>
+</head>
+{% load static %}
+<script src="{% static 'js/secondone.js' %}" type="text/javascript">
+</script>
+<body>
+<h1>vehicle B</h1>
+<form method="POST">
+{% csrf_token %}
+Product Name:<input type="text" id="name" placeholder="Product Name" name="productname"><br><br>
+Weight:<input type="text" id="weight" placeholder="Weight" name="weight"><br><br>
+<button type="submit" onclick="valid()">Submit</button><br><br>
+</form>
+<a href="veh2/detailsb">View Details</a>
+</body>
+</html>
+{% endblock %}
